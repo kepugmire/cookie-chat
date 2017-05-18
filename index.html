@@ -5,17 +5,33 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body ng-controller="mainCtrl">
+
     <div class="main-container">
-      <h1> DevMountain Chat Room </h1>
-      <form ng-submit="postMessage(message)">
-        <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
-      </form>
-      <div class="messages-container">
-        <p ng-repeat="message in messages ">
-          {{message.message}} </p>
+
+      <div class="images-container">
+        <img class="image-box" src='http://www.witness-this.com/content/uploads/2015/11/AJONES__0003_DATASEARCH_ajones.jpg' alt="">
+        <div class="circle-img"><img src="https://i.vimeocdn.com/portrait/9687027_300x300" alt=""></div>
       </div>
+
+      <h1 style="color: #A3A3A3"><strong>DevMtn23 Chat Room</strong></h1>
+      
+      
+      
+      <form ng-submit="postMessage(message)">
+        <input class="text-box" type="text" ng-model="message" placeholder="Message">
+      </form>
+      
+      
+      
+      <div class="messages-container">
+        <p ng-repeat="message in messages "> {{message.message}} </p>
+        
+        <div class="messages-header">Messages from the morons</div>
+        </div>
     </div>
+
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
     <script src="js/app.js"></script>
@@ -23,3 +39,7 @@
     <script src="js/messageService.js"></script>
   </body>
 </html>
+
+
+
+
